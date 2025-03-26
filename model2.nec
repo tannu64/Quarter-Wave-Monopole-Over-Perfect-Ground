@@ -1,0 +1,15 @@
+CM  Quarter-wave monopole over perfect ground (no geometry error)
+CM  -- Create a new symbol that is (offset + L):
+CE
+SY L=0.76
+SY r=0.003
+SY offset=0.001
+SY Lplus=(offset + L)
+GW	1	1	0	0	0	0	0	offset	r
+GW	2	10	0	0	offset	0	0	Lplus	r
+GE	1
+GN	1
+EK
+EX	0	2	1	0	1.0	0	0
+FR	0	0	0	0	87.5	0
+EN
